@@ -27,13 +27,13 @@ def generate_rsa_keypair():
     )
 
     # 5. Save files to disk 
-    with open("student_private_key.pem", "wb") as f:
+    with open("student_private.pem", "wb") as f:
         f.write(pem_private)
-    print("✅ Saved student_private_key.pem")
+    print("✅ Saved student_private.pem")
 
-    with open("student_public_key.pem", "wb") as f:
+    with open("student_public.pem", "wb") as f:
         f.write(pem_public)
-    print("✅ Saved student_public_key.pem")
+    print("✅ Saved student_public.pem")
 
 if __name__ == "__main__":
     generate_rsa_keypair()

@@ -10,10 +10,10 @@ def get_encrypted_seed():
     print(f"🔹 preparing request for Student ID: {STUDENT_ID}")
 
     try:
-        with open("student_public_key.pem", "r") as f:
+        with open("student_public.pem", "r") as f:
             public_key_content = f.read()
     except FileNotFoundError:
-        print("Error: student_public_key.pem not found. Did you run Step 2?")
+        print("Error: student_public.pem not found. Did you run Step 2?")
         return
 
     payload = {

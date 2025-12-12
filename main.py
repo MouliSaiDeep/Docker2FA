@@ -10,7 +10,7 @@ from cryptography.hazmat.primitives.asymmetric import padding
 
 app = FastAPI()
 
-PRIVATE_KEY_PATH = "student_private_key.pem"
+PRIVATE_KEY_PATH = "student_private.pem"
 DATA_DIR = "/data" 
 SEED_FILE = os.path.join(DATA_DIR, "seed.txt")
 
